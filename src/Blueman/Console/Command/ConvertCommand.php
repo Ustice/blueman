@@ -60,7 +60,7 @@ EOT
         $blueprint = json_decode(file_get_contents($file));
 
         $version = (float)$blueprint->_version;
-        if ($version < 2.0) {
+        if ($version < 0.9) {
             throw new \Exception(
                 'Your API Blueprint needs to be build with Snow Crash 0.9.0 or higher.'
             );
